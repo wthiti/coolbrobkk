@@ -5,6 +5,8 @@ import Header from "./header";
 import Footer from "./footer";
 import Jumbotron from "./jumbotron"
 import FollowUs from "./follow_us"
+import Content from "./content"
+import Shop from "./shop"
 
 export default class App extends Component {
   render() {
@@ -13,6 +15,8 @@ export default class App extends Component {
         <Header/>
         <Jumbotron/>
         <FollowUs/>
+        <Content/>
+        <Shop/>
         <Footer/>
       </div>
     );
