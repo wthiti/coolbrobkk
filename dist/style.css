@@ -43,6 +43,15 @@ body {
   margin-righ: 5px;
 }
 
+.side-menu-button {
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background-color: rgb(51, 29, 11);
+}
+
 .footer {
   padding-top: 20px;
   color: #777;
