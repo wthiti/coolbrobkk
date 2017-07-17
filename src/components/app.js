@@ -8,6 +8,7 @@ import FollowUs from "./follow_us"
 import Section from "./section"
 
 import ContentDisplay from "../containers/content_display"
+import LaunchCountDown from "../containers/launch_countdown"
 import Shop from "../containers/shop"
 
 export default class App extends Component {
@@ -19,6 +20,9 @@ export default class App extends Component {
         <FollowUs/>
         <Section>
           <ContentDisplay />
+        </Section>
+        <Section>
+          <LaunchCountDown />
         </Section>
         <Section>
           <Shop />

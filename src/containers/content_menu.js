@@ -7,8 +7,9 @@ class ContentMenu extends Component {
     super(props);
   }
 
-  componentDidMount() {
-    this.props.selectContent('about_us');
+  componentWillMount() {
+    if(!this.props.content.selectedContent)
+      this.props.selectContent('about_us');
   }
 
   handleLinkOnClick(e,txt) {
