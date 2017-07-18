@@ -24,6 +24,7 @@ export default class LaunchCountDown extends Component {
   render() {
     return (
       <div className='jumbotron'>
+        <h2 className='jumbotron-header-text text-center'><b><u>Save Your Date</u></b></h2>
         <h2 className='jumbotron-header-text text-center'>{`${this.state.countDownDisplay}`}</h2>
         <h2 className='jumbotron-header-text text-center'>Until The Launch Date</h2>
       </div>

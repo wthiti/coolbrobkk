@@ -6,11 +6,19 @@ class JumbotronImage extends Component {
     super(props);
   }
 
+  getImgColNumber(length) {
+    const maxImgPerRow = 3;
+    const row = Math.floor(length / 3) === 0 ? 1 : Math.floor(length / 3 );
+    const imgPerRow = Math.floor(length / row);
+    return 12 / imgPerRow;
+  }
+
   renderImage() {
     const imageList = this.props.jumbotron.imageList;
+    const colNum = this.getImgColNumber(imageList.length);
     return imageList.map((img) =>
       (
-        <div className='col-xs-4 col-md-4' key={img}>
+        <div className={`col-xs-${colNum} col-md-${colNum}`} key={img}>
           <img src={img} className='img img-responsive social-img'/>
         </div>
       )
